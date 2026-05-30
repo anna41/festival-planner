@@ -1,0 +1,52 @@
+/* App-level styles: light blue header and slightly lighter page background */
+
+/* Make the app full-screen: override root constraints */
+html,
+body,
+#root {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    min-height: 100svh;
+    box-sizing: border-box;
+    border-inline: none;
+}
+
+.app-container {
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #eaf7ff;
+    /* lighter blue for the page */
+}
+
+.app-header {
+    background: linear-gradient(180deg, #bfe7ff, #a6ddff);
+    /* light blue header */
+    padding: 20px 16px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(6, 36, 40, 0.06);
+}
+
+.app-header h1 {
+    margin: 0;
+    color: #052b3a;
+    /* dark blue-gray for contrast */
+    font-family: var(--heading);
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.app-main {
+    padding: 24px;
+    flex: 1 1 auto;
+}
+
+.profile-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}

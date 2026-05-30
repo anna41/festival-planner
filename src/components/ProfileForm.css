@@ -1,0 +1,83 @@
+/* ProfileForm component styles */
+.profile-form {
+    max-width: 480px;
+    margin: 32px auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(8, 22, 30, 0.06);
+    border: 1px solid rgba(5, 43, 58, 0.04);
+}
+
+.profile-title {
+    margin: 0 0 16px 0;
+    font-size: 22px;
+    color: #052b3a;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 14px;
+}
+
+.label {
+    font-size: 13px;
+    color: #344047;
+    text-align: left;
+}
+
+.input {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(6, 36, 40, 0.12);
+    background: #ffffff;
+    font-size: 15px;
+    outline: none;
+}
+
+.input:focus {
+    box-shadow: 0 0 0 4px rgba(107, 186, 255, 0.14);
+    border-color: #5fb8ff;
+}
+
+.error {
+    color: #d9534f;
+    font-size: 13px;
+    margin-top: 6px;
+    text-align: left;
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 8px;
+}
+
+.btn {
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-primary {
+    color: white;
+    background: linear-gradient(180deg, #3db0ff, #1fa0e6);
+    box-shadow: 0 6px 18px rgba(31, 160, 230, 0.18);
+}
+
+.btn-primary:hover {
+    filter: brightness(0.98);
+}
+
+.btn[disabled],
+.btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    box-shadow: none;
+}
